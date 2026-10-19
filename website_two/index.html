@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PGR301 - Terraform Moduler & Multi-Stack Lab</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased min-h-screen flex items-center justify-center p-6">
+    <div class="max-w-xl w-full bg-white border border-slate-200 shadow-sm rounded-xl p-8 md:p-10">
+        <!-- Header -->
+        <div class="mb-6">
+            <span class="inline-block bg-indigo-50 text-indigo-600 font-medium text-xs px-3 py-1 rounded-full mb-3 uppercase tracking-wider">
+                PGR301 • Lab Miljø 2
+            </span>
+            <h1 class="text-3xl font-bold tracking-tight text-slate-900">Hello from Module Stack #2</h1>
+            <p class="text-slate-500 mt-1">Samme kode, ny instans og isolert S3 bucket.</p>
+        </div>
+
+        <!-- Divider -->
+        <hr class="border-slate-100 my-6">
+
+        <!-- Content List -->
+        <div class="space-y-4">
+            <p class="text-slate-700">Ved å bruke gjenbrukbare moduler har denne nettsiden blitt automatisert fram med:</p>
+            <ul class="space-y-3 text-slate-600 text-sm">
+                <li class="flex items-start">
+                    <span class="inline-flex items-center justify-center h-5 w-5 rounded-full bg-emerald-100 text-emerald-600 mr-3 mt-0.5 text-xs font-bold">✓</span>
+                    <span>Modulbasert Terraform-struktur (DRY-prinsippet)</span>
+                </li>
+                <li class="flex items-start">
+                    <span class="inline-flex items-center justify-center h-5 w-5 rounded-full bg-emerald-100 text-emerald-600 mr-3 mt-0.5 text-xs font-bold">✓</span>
+                    <span>Skreddersydde input-variabler for unike bucket-navn</span>
+                </li>
+                <li class="flex items-start">
+                    <span class="inline-flex items-center justify-center h-5 w-5 rounded-full bg-emerald-100 text-emerald-600 mr-3 mt-0.5 text-xs font-bold">✓</span>
+                    <span>Synkronisert innhold via <code class="bg-slate-100 px-1.5 py-0.5 rounded text-slate-800 text-xs font-mono">aws s3 sync</code></span>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Footer Callout -->
+        <div class="mt-8 bg-slate-50 border border-slate-100 rounded-lg p-4 text-xs text-slate-500">
+            Klar for nestesteg? Gå videre til CloudFront-distribusjon og HTTPS-konfigurasjon i oppgaveheftet.
+        </div>
+    </div>
+</body>
+</html>
