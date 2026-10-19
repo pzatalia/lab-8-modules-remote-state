@@ -4,9 +4,10 @@ module "s3_website" {
   bucket_name = "natalia-p-pgr301-website"
 
   tags = {
-    Name        = "PGR301 Lab"
-    Environment = "Demo"
-    ManagedBy   = "Terraform"
+    Name         = "PGR301 Lab"
+    Environment  = "Demo"
+    ManagedBy    = "Terraform"
+    PipelineTest = "true"
   }
 }
 
